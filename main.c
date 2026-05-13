@@ -14,9 +14,9 @@ int main() {
     
     for (int i = 0; i < 5; i++) {
         // print de la forma convencional
-        printf("%d ", numeros[i]);
+        printf("Vector[%d] %d", i, numeros[i]);
         // print usando punteros
-        printf("%d\n",*(ptr+i));
+        printf("%d\n",*(ptr++));
     }
     return 0;
 }
