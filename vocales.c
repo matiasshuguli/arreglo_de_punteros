@@ -2,10 +2,13 @@
 
 int main (int argc, char *argv[]) {
     char vocales[5] = {'a', 'e', 'i', 'o', 'u'}; 
-    
-  
+    char *ptr;
+    ptr = &vocales[0];
     for (int i = 0; i < 5; i++) {
-        printf("vocales[%d] %c\n", i, vocales[i]);
+        // print de la forma clasica
+        printf("vocales[%d] %c", i, vocales[i]);
+        // print usando punteros
+        printf("%c\n",*(ptr++));
     }
     
     return 0;
